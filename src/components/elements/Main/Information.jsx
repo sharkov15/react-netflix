@@ -2,15 +2,6 @@ import Button from '../../UI/Button/Button'
 import styles from './Main.module.scss'
 
 const Information = ({ movie }) => {
-	const addToFavorites = movieName => {
-		let favorites = localStorage.getItem('favMovies')
-
-		if (favorites) {
-			favorites = JSON.parse(favorites)
-			localStorage.setItem('favMovies', [...favorites, movieName])
-			alert(`${movieName} теперь в избранном!`)
-		}
-	}
 
 	return (
 		<div className={styles.info}>
@@ -35,7 +26,7 @@ const Information = ({ movie }) => {
 					<i className='bx bx-play' style={{ color: '#c62e21' }}></i>
 					<span>Play</span>
 				</Button>
-				<Button cb={addToFavorites}>
+				<Button>
 					<i className='bx bx-plus'></i>
 					<span>My list</span>
 				</Button>

@@ -1,0 +1,21 @@
+h1{
+    color: #fff;
+}
+.Main{
+    margin-top: 35px;
+    margin-left: 255px;
+}
+.Blocks{
+    display: flex;
+}
+.project {
+	cursor: pointer;
+} 
+.project__img {
+    margin: 0 10px;
+    width: 400px;
+	border-radius: 3px;
+}
+.project__title{
+    color: #fff;
+}

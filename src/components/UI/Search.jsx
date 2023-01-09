@@ -1,9 +1,15 @@
+import styles from './Search.module.scss'
+
 const Search = () => {
-    return ( 
-        <div>
-            <h1>Enter</h1>
-        </div>
-    );
+	return (
+		<div className={styles.search}>
+			<div>
+				<i className='bx bx-search-alt'></i>
+				<input type='text' placeholder='I`m searching for...' />
+			</div>
+			<i className='bx bx-customize'></i>
+		</div>
+	)
 }
- 
-export default Search;
+
+export default Search

@@ -1,0 +1,33 @@
+.nav {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	z-index: 1;
+
+	> button {
+		opacity: 0.8;
+		transition: border-color 0.4s ease, opacity 0.4s ease;
+		border: none;
+		border-bottom: 4px solid transparent;
+		padding-bottom: 0.5rem;
+		font-size: 20px;
+		text-transform: uppercase;
+		color: #fff;
+		background-color: transparent;
+		margin: 0 1rem;
+
+		&.active {
+			border-color: #c62e21;
+			opacity: 1;
+		}
+
+		&:hover {
+			border-color: #982117;
+			opacity: 1;
+		}
+	}
+}
